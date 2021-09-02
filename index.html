@@ -17,8 +17,64 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
      crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+     <link rel="stylesheet" href="cart.css">
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/css/jquery.min.css"></script>
 </head>
+<style media="screen">
 
+    .carousel-cell {
+    width:40%;
+    height:90vh;
+    }
+    
+    .carousel-cell img{
+    object-fit:cover;
+    width:70%;
+    height:90vh;
+    border-radius:20px;
+    position:relative;
+    }
+    .container {
+      position: relative;
+      width: 50%;
+    }
+    
+    .image {
+      display: block;
+      width: 70%;
+      height: 90vh;
+    }
+    
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color:#f57710cb;
+      overflow: hidden;
+      width:70%;
+      height: 0;
+      transition: .5s ease;
+    }
+    
+    .carousel-cell:hover .overlay {
+      height: 60%;
+    }
+    
+    .text {
+      white-space: nowrap; 
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+</style>
 <body>
     <header>
         <div class="left-circ" >
@@ -234,7 +290,7 @@
         </div>
     </section>
 <!-- Creating Certificates Layout in HTML -->
-<section class="certificates" id="certificates">
+<!--<section class="certificates" id="certificates">
     <div class="heading white" style="text-align:center">
         <h1>Students</h1>
         <p>Students of batch one</p>
@@ -330,7 +386,7 @@
         </div>
     </div>
 </section>
-
+-->
 
 <!--<section id="dish" class="container">
 
@@ -721,6 +777,270 @@
         </div>
     </section>
 --> 
+    
+    <div class="slider">
+    <br><br> <h1 style="text-align:center;padding-top:20px;padding-bottom:30px;font-size:50px;letter-spacing:1px;font-weight:500;" id="Breakfast">HALL OF FAME WINNERS <i class="fa fa-pie-chart" aria-hidden="true" style="color:orange;font-size:50px;"></i></h1>
+    <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":true }'>
+    
+    <div class="carousel-cell">
+    <img src="images/Vijay.jpeg" class="image" style="height: 600px;">
+    <div class="overlay">
+        <div class="text" style="color:black;"><h3>VIJAY JHA<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+       
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-cell">
+        <img src="images/Uday.jpeg" class="image" style="height: 600px;">
+        <div class="overlay">
+            <div class="text" style="color:black;"><h3>UDAY PRATAP<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Participation COP</b>
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/Rukhsana.jpeg" class="image" style="height: 600px;">
+            <div class="overlay">
+                <div class="text" style="color:black;"><h3>RUKHSANA KHAN<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>CID COP</b>
+               
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+                <img src="images/Vishal.jpeg" class="image" style="height: 600px;">
+                <div class="overlay">
+                    <div class="text" style="color:black;"><h3>VISHAL SOAM<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+                   
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell">
+                    <img src="images/Bhagirath.jpeg" class="image" style="height: 600px;">
+                    <div class="overlay">
+                        <div class="text" style="color:black;"><h3>BHAGIRATH MEENA<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Pronunciation COP</b>
+                       
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="carousel-cell">
+                        <img src="images/Ritik.jpeg" class="image" style="height: 600px;">
+                        <div class="overlay">
+                            <div class="text" style="color:black;"><h3>Ritik Kumar<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+                           
+                            </div>
+                          </div>
+                        </div>
+</div>
+</div>
+<br><br>
+<div class="slider">
+    <br><br>   <h1 style="text-align:center;padding-top:20px;padding-bottom:30px;font-size:50px;letter-spacing:1px;font-weight:500;" id="Breakfast">OVERALL 95% ATTENDEES <i class="fa fa-pie-chart" aria-hidden="true" style="color:orange;font-size:50px;"></i></h1>
+    <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":true }'>
+    
+    <div class="carousel-cell">
+    <img src="images/Preeti.jpeg" class="image" style="height: 600px;">
+    <div class="overlay">
+        <div class="text" style="color:black;"><h3>PREETI <i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+       
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-cell">
+        <img src="images/Nishita.jpg" class="image" style="height: 600px;">
+        <div class="overlay">
+            <div class="text" style="color:black;"><h3>NISHITA BADERIA<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>G-COP </b>
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/Anjali.jpeg" class="image" style="height: 600px;">
+            <div class="overlay">
+                <div class="text" style="color:black;"><h3>ANJALI<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Pledge COP</b>
+               
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+                <img src="images/Ajeet.jpeg" class="image" style="height: 600px;">
+                <div class="overlay">
+                    <div class="text" style="color:black;"><h3>AJEET PANDEY<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Pledge COP</b>
+                   
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell">
+                    <img src="images/Deepak.jpeg" class="image" style="height: 600px;">
+                    <div class="overlay">
+                        <div class="text" style="color:black;"><h3>DEEPAK KUMAR<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+                       
+                        </div>
+                      </div>
+                    </div>
+
+                    
+</div>
+</div>
+<br><br>
+<div class="slider">
+    <br><br> <h1 style="text-align:center;padding-top:20px;padding-bottom:30px;font-size:50px;letter-spacing:1px;font-weight:500;" id="Breakfast">LEADERS IN CLASS <i class="fa fa-pie-chart" aria-hidden="true" style="color:orange;font-size:50px;"></i></h1>
+    <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":true }'>
+    
+    <div class="carousel-cell">
+    <img src="images/Kanishka.jpeg" class="image" style="height: 600px;">
+    <div class="overlay">
+        <div class="text" style="color:black;"><h3>KANISHKA BEDI<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Chat-Box COP</b>
+       
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-cell">
+        <img src="images/Sachin.jpeg" class="image" style="height: 600px;">
+        <div class="overlay">
+            <div class="text" style="color:black;"><h3>SACHIN<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Super COP</b>
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/Shubham.jpeg" class="image" style="height: 600px;">
+            <div class="overlay">
+                <div class="text" style="color:black;"><h3>SHUBHAM RANJAN<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+               
+                </div>
+              </div>
+            </div>
+
+            
+</div>
+</div>
+<br><br>
+<div class="slider">
+    <br><br>  <h1 style="text-align:center;padding-top:20px;padding-bottom:30px;font-size:50px;letter-spacing:1px;font-weight:500;" id="Breakfast">ACTIVE COPS <i class="fa fa-pie-chart" aria-hidden="true" style="color:orange;font-size:50px;"></i></h1>
+    <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":true }'>
+    
+    <div class="carousel-cell">
+    <img src="images/Devendar.jpeg" class="image" style="height: 600px;">
+    <div class="overlay">
+        <div class="text" style="color:black;"><h3>DEVENDER KUMAR<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Video COP</b>
+       
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-cell">
+        <img src="images/Amit.jpeg" class="image" style="height: 600px;">
+        <div class="overlay">
+            <div class="text" style="color:black;"><h3>AMIT<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>CID COP</b>
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/Vandana.jpeg" class="image" style="height: 600px;">
+            <div class="overlay">
+                <div class="text" style="color:black;"><h3>VANDANA<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Pronunciation COP</b>
+               
+                </div>
+              </div>
+            </div>
+
+            
+</div>
+</div>
+<br><br>
+<div class="slider">
+    <br><br>  <h1 style="text-align:center;padding-top:20px;padding-bottom:30px;font-size:50px;letter-spacing:1px;font-weight:500;" id="Breakfast">RISING STARS <i class="fa fa-pie-chart" aria-hidden="true" style="color:orange;font-size:50px;"></i></h1>
+    <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":true }'>
+    
+    <div class="carousel-cell">
+    <img src="images/Tripti.jpeg" class="image" style="height: 600px;">
+    <div class="overlay">
+        <div class="text" style="color:black;"><h3>TRIPTI<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+       
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-cell">
+        <img src="images/Warsii.jpeg" class="image" >
+        <div class="overlay">
+            <div class="text" style="color:black;"><h3>ZEHRA KHAN<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/Vaishnavi.jpeg" class="image" style="height: 600px;">
+            <div class="overlay">
+                <div class="text" style="color:black;"><h3>VAISHNAVI<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+               
+                </div>
+              </div>
+            </div>
+
+           
+</div>
+</div>
+<br><br>
+<div class="slider">
+    <br><br><h1 style="text-align:center;padding-top:20px;padding-bottom:30px;font-size:50px;letter-spacing:1px;font-weight:500;" id="Breakfast">HEATING UP <i class="fa fa-pie-chart" aria-hidden="true" style="color:orange;font-size:50px;"></i></h1>
+    <div class="carousel" data-flickity='{"wrapAround":true,"autoPlay":true }'>
+    
+    <div class="carousel-cell">
+    <img src="images/Shakuntala.jpeg" class="image" style="height: 600px;">
+    <div class="overlay">
+        <div class="text" style="color:black;"><h3>SHAKUNTALAPANDEY<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+       
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-cell">
+        <img src="images/Neha.jpeg" class="image" style="height: 600px;">
+        <div class="overlay">
+            <div class="text" style="color:black;"><h3>NEHA SHARMA<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-cell">
+            <img src="images/Anjali.jpeg" class="image" style="height: 600px;">
+            <div class="overlay">
+                <div class="text" style="color:black;"><h3>ANJALI<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Pledge COP</b>
+               
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-cell">
+                <img src="images/Deepak.jpeg" class="image" style="height: 600px;">
+                <div class="overlay">
+                    <div class="text" style="color:black;"><h3>DEEPAK<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
+                   
+                    </div>
+                  </div>
+                </div>
+
+                 
+</div>
+</div>
+    
+    <!--footer section-->
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
