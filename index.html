@@ -70,6 +70,57 @@
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
     }
+    
+    @media screen and (max-width: 600px){
+        
+    .carousel-cell {
+    width:35%;
+    height:60vh;
+    }
+    
+    .carousel-cell img{
+    object-fit:cover;
+    width:60%;
+    height:60vh;
+    border-radius:20px;
+    position:relative;
+    }
+    
+    
+    .image {
+      display: block;
+      width: 60%;
+      height: 60vh;
+    }
+    
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color:#f57710cb;
+      overflow: hidden;
+      width:60%;
+      height: 0;
+      transition: .5s ease;
+    }
+    
+    .carousel-cell:hover .overlay {
+      height: 50%;
+    }
+    
+    .text {
+      white-space: nowrap; 
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    }
 </style>
 <body>
     <header>
@@ -971,7 +1022,7 @@
     </div>
     
     <div class="carousel-cell">
-        <img src="images/Warsii.jpeg" class="image" >
+        <img src="images/Warsii.jpeg" class="image" style="height: 600px;" >
         <div class="overlay">
             <div class="text" style="color:black;"><h3>ZEHRA KHAN<i class="fa fa-smile-o" aria-hidden="true" style="font-weight:900"></i></h3><b>Active Learner</b>
            
